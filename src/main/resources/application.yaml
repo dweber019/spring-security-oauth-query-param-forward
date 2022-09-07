@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            clientId: xxx
+            clientSecret: xxx
+            scope: openid
+            authorization-grant-type: authorization_code
+        provider:
+          keycloak:
+            issuer-uri: https://xxx
+logging:
+  level:
+    web: debug
