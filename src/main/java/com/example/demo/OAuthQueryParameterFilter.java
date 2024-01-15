@@ -2,16 +2,13 @@ package com.example.demo;
 
 import static org.springframework.security.oauth2.core.endpoint.OAuth2ParameterNames.SCOPE;
 
+import jakarta.servlet.*;
+
 import java.io.IOException;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.stream.Collectors;
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import org.apache.catalina.connector.RequestFacade;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
